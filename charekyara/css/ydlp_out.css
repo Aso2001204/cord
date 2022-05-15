@@ -1,0 +1,59 @@
+*{
+    position: center;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+}
+
+h1 {
+    color:#112aed;
+    font-size: 30px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 2vw;
+    box-sizing: border-box;
+    background: repeating-linear-gradient(45deg, #ffffff, #ffffff 3px, #e7e7e7 3px, #e7e7e7 30px);
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    position: relative;
+    left: 30vw;
+}
+button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6vw;
+    height: 2vw;
+    background: #fff;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    transition-duration: 0.2s;
+}
+button:hover span {
+    left: -1px;
+    top: -1px;
+}
+
+.image {
+    width: 20em;
+    height: 10em;
+    margin: 0 auto;
+    position: absolute;
+    left: 20em;
+    display: block;
+}
+.detail {
+    width: 35vw;
+    text-align: left;
+    display: inline-block;
+}
