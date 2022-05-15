@@ -1,0 +1,83 @@
+$result:{
+    ResultInfo:{    $result['ResultInfo']
+        Count:レスポンス情報に含まれるデータ件数
+        Total:出力されている住所情報以外も含めた全データ件数
+        Start:レスポンス情報に含まれるデータの、全データからの取得開始位置
+        Latency:レスポンス情報を生成するのに要した時間です
+        Status:リクエスト元に処理結果を伝えるためのコード
+    }
+    Feature:{   $result['Feature']
+        Id:カセット内部のID
+        Gid:拠点ごとに割り当てられた拠点の管理ID
+        Name:地域・拠点情報名（店舗名）  ＊
+        Geometry:{  $result['Feature']['Geometry']
+            Type:図形種別
+            Coordinates:座標情報
+        }
+        Property:{  $result['Feature']['Property']
+            Uid:Yahoo! Open Local Platform（YOLP）内部での識別ID
+            CassetteId:カセットID
+            Yomi:地域・拠点情報名の読み（店舗名の読み）
+            Country:{   $result['Feature']['Property']['Country']
+                Code:国コード（国際標準化機構（ISO） 3166-1）
+                Name:国名
+            }
+            Address:1行で表す住所     ＊
+            GovernmentCode:住所コード（日本工業規格（JIS） X 0401 5けた）
+            Station:{   $result['Feature']['Property']['Station']
+                Id:駅ID
+                Name:駅名     ＊
+                Railway:代表路線名
+                Exit:最寄りの駅出口名
+                ExitId:最寄りの駅出口ID
+                Distance:最寄駅出口からの距離（m）
+                Time:最寄駅出口からの徒歩時間
+            }
+            PlaceInfo:{     $result['Feature']['Property']['PlaceInfo']
+                FloorName:フロア名
+                MapType:最適な地図の種別
+                MapScale:この地域・拠点名を表示するのに適切な地図の縮尺
+            }
+            Tel1:電話番号   ＊
+            Genre:{     $result['Feature']['Property']['Genre']
+                Code:業種コード
+                Name:ジャンル名  ＊
+            }
+            Building:{      $result['Feature']['Property']['Building']
+                Id:ビルごとに割り当てられたID(変更になる場合あり)
+                Name:ビル名
+                Floor:階数の情報
+            }
+            CatchCopy:キャッチコピー   ＊
+            Coupon:クーポン情報
+            ReviewCount:レビュー数
+            Detail:{    $result['Feature']['Property']['Detail']
+                ZipCode:郵便番号    ＊
+                Fax1:Fax番号      ＊
+                Access1:アクセス方法  ＊
+                Copyright:アクセス方法    ＊
+                PcUrl1:パソコンサイトのURL  ＊
+                MobileUrl1:モバイルサイトのURL  ＊
+                ReviewUrl:レビューのURL  ＊
+                Image1:画像情報     ＊
+            }
+            Style:
+        }
+    }
+}
+
+$ret{
+    ShopName:地域・拠点情報名（店舗名）
+    GenreName:ジャンル名
+    CatchCopy:キャッチコピー
+    ZipCode:郵便番号
+    Address:1行で表す住所
+    Tel:電話番号
+    Fax:Fax番号
+    Access:アクセス方法
+    StationName:最寄り駅名
+    PcUrl1:パソコンサイトのURL
+    MobileUrl1:モバイルサイトのURL
+    ReviewUrl:レビューのURL
+    Image1:画像情報
+}

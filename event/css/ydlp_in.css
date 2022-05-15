@@ -1,0 +1,19 @@
+*{
+    position: center;
+    text-align: center;
+    margin: 0 auto
+}
+button {
+    margin-left: 0;
+}
+h2 {
+    font-size: 20px;
+}
+.detail {
+    max-width: 800px;
+    margin: 5px;
+}
+td img {
+    width: 25vw;
+    height: auto;
+}
