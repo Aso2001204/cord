@@ -1,0 +1,12 @@
+body{
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    position: center;
+}
+
+.ans{
+    font-size: 20px;
+    font-family: HG行書体;
+    color: #ed8734
+}
