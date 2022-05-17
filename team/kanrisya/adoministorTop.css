@@ -1,0 +1,15 @@
+*{
+    position: center;
+    text-align: center;
+}
+
+button {
+    height: 10vw;
+    width: 20vw;
+    background-color: orange;
+    border-radius: 3px;
+    margin: 3vw;
+}
+.top {
+    margin-top: 20vw;
+}

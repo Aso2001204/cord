@@ -1,0 +1,290 @@
+*{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+}
+html{
+    background-color: #FFFFFF;
+}
+figure {
+    float: left;
+    margin: 10px 30px 10px 10px;
+    width: 5%;
+}
+.search_container{
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #999;
+    display: inline-block;
+    padding-top: 3px;
+    margin-right: -18px;
+    border-radius: 20px;
+    height: 2.3em;
+    width: 230px;
+    overflow: hidden;
+    margin-top: 13px;
+}
+.search_container input[type="text"]{
+    border: none;
+    height: 2.0em;
+}
+.search_container input[type="text"]:focus {
+    outline: 0;
+}
+.search_container input[type="submit"]{
+    font-family: FontAwesome;
+    border: none;
+    background: #3879D9;
+    color: #fff;
+    position: absolute;
+    width: 3.5em;
+    height: 3.0em;
+    right:0px;
+    top: -3px;
+    outline : none;
+}
+
+.v_line_fix {
+    margin-left: 1px;
+    width: 1px;
+    height: 15px;
+    background-color: black;
+}
+
+.hedder1{
+    text-align: right;
+    margin-right: 15px;
+}
+
+
+.btn{
+    width: 80px;
+    height: 20px;
+    text-align:center;
+    line-height:20px;
+    padding: 10px 30px ;
+    margin-left: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: PaleTurquoise;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-radius: 7px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.btn1{
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    padding: 10px 30px ;
+    margin-top: -10px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    background-color: PaleTurquoise;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-radius: 7px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+/* ヘッダーの固定 */
+div#header-fixed
+{
+    position: fixed;            /* ヘッダーの固定 */
+    top: 0px;                   /* 位置(上0px) */
+    left: 0px;                  /* 位置(右0px) */
+    width: 100%;                /* 横幅100%　*/
+    height: 140px;              /* 縦幅140px */
+    background-color: white;
+    margin-left: 360px;
+}
+
+
+div#header-bk {
+    padding:0px 0 20px;       /* 上10px、下20pxをあける */
+    height:110px;              /* 縦の高さ110px */
+    width:100%;                /* 横の幅を100% */
+    background-color: white;
+}
+
+
+div#header {
+    height: 100%;              /* 縦の表示領域はheader-bkと同じ */
+    width: 1000px;              /* 横の幅970px */
+    margin: auto;
+    background-color: white;
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+}
+
+/* フッターの固定 */
+div#footer-fixed
+{
+    position: fixed;            /* フッターの固定 */
+    bottom: 0px;                /* 位置(下0px) */
+    left: 0px;                  /* 位置(左0px) */
+    width: 100%;                /* 横幅100%　*/
+    height: 140px;              /* 縦幅140px */
+    background-color: #ffffff;
+    margin-left: 360px;
+    margin-bottom: -50px;
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+
+}
+
+div#footer-bk
+{
+    padding:0 0 0px;       /* 上10px、下20pxをあける */
+    height:110px;              /* 縦の高さ140px */
+    width:100%;                /* 横の幅を100% */
+    background-color: #ffffff;
+}
+
+div#footer {
+    height: 100%;              /* 縦の表示領域はheader-bkと同じ */
+    width: 1000px;              /* 横の幅970px */
+    margin-bottom: 10px;              /* 中央揃え */
+    background-color: #ffffff;
+}
+
+/* ボディの定義 */
+div#body-bk{
+    padding:150px 0px 80px 0;    /* 上下に160pxを余白を取る */
+    margin-right: -2px;
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+    margin-top: -30px;
+}
+
+div#body {
+    max-height: 3000px;
+    width: 1000px;
+    margin: auto;
+    background-color: white;
+}
+
+.border{
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+    background-color: #ffffff;
+    max-width: 1000px;
+    text-align: left;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-left: -1px;
+    margin-right: -1px;
+
+}
+.border2{
+    border-top: 1px solid #333;
+    background-color: #fff;
+    max-width: 1000px;
+    text-align: left;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+}
+
+.syurui{
+    font-size: 21px;
+    font-weight: bold;
+    display: inline;
+    margin-left: 45px;
+}
+
+.btn2{
+    width: 80px;
+    height: 20px;
+    text-align:center;
+    line-height:20px;
+    padding: 10px 30px ;
+    margin-left: 90px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    background-color: #eef527;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-radius: 7px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+h2{
+    padding-top: 30px;
+    margin-left: 20px;
+}
+
+.cube_area {
+    margin: 25px 100px;
+}
+
+.red_cube {
+    width: 100px;
+    height: 100px;
+    background: #F71E35;
+    border-radius: 50%;
+    cursor: pointer;
+
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+}
+
+.blue_cube {
+    background: #118DF0;
+}
+
+.syohinimg{
+    float: left;
+    margin: 10px 30px 10px 10px;
+    height: 160px;
+    max-height: 160px;
+    max-width: 110px;
+}
+
+.syohinbotan{
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+.syohin{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 110px;
+    font-size: 15px;
+}
+
+.syohinhr{
+    clear: both;
+}
+.yokosen{
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+margin-right: -2px;
+}
+
+.ka-to{
+    float: left;
+    margin-left: 10px;
+}
+
+.en{
+    margin-left: 10px;
+    float: left;
+    font-size: 15px;
+}
+
+.hinmei{
+    float: left;
+    font-size: 15px;
+}

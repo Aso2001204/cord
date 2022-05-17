@@ -1,0 +1,31 @@
+* {
+    position: center;
+    text-align: center;
+}
+form {
+    margin-top: 10vw;
+}
+h1 {
+    font-size: 5vw;
+}
+input[type="text"] {
+    height: 5vw;
+    width: 25vw;
+    font-size: 3vw;
+    border: solid 3px;
+}
+button {
+    border:none;
+    border-radius: 7px;
+    width: 10vw;
+    height: 5vw;
+    color: white;
+}
+#return {
+    background-color: #aaaaaa;
+    margin-right: 2vw;
+}
+#serch {
+    background-color: green;
+    margin-left: 2vw;
+}
